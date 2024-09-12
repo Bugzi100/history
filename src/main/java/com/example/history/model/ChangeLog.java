@@ -1,13 +1,11 @@
 package com.example.history.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.Instant;
 
 @Entity
+@Table(name = "MB_ChangeLog")
 public class ChangeLog {
 
     @Id
